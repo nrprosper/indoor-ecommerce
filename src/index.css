@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.shop-action::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    @apply bg-theme-blue;
+    height: 2px;
+    width: 100%;
+}
