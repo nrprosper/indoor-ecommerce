@@ -3,6 +3,9 @@ import {Autoplay, Navigation, Pagination} from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import {swiper1, swiper2, swiper3} from "../../Constants/bgs.ts";
+
+
 
 const Hero = () => {
     return(
@@ -23,21 +26,21 @@ const Hero = () => {
                 >
                     <SwiperSlide
                         style={{
-                            backgroundImage: `url(../src/assets/bgs/swiper1.png)`,
+                            backgroundImage: `url(${swiper1})`,
                             backgroundSize: "cover",
                             backgroundPosition: "center"
                         }}
                     />
                     <SwiperSlide
                         style={{
-                            backgroundImage: `url(../src/assets/bgs/swiper2.jpg)`,
+                            backgroundImage: `url(${swiper2})`,
                             backgroundSize: "cover",
                             backgroundPosition: "center"
                         }}
                     />
                     <SwiperSlide
                         style={{
-                            backgroundImage: `url(../src/assets/bgs/swiper3.jpg)`,
+                            backgroundImage: `url(${swiper3})`,
                             backgroundSize: "cover",
                             backgroundPosition: "center"
                         }}
