@@ -1963,7 +1963,7 @@ swiper@^11.1.9:
 
 tailwindcss@^3.4.9:
   version "3.4.9"
-  resolved "https://registry.npmjs.org/tailwindcss/-/tailwindcss-3.4.9.tgz"
+  resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-3.4.9.tgz#9e04cddce1924d530df62af37d3520f0e2a9d85e"
   integrity sha512-1SEOvRr6sSdV5IDf9iC+NU4dhwdqzF4zKKq3sAbasUWHEM6lsMhX+eNN5gkPx1BvLFEnZQEUFbXnGj8Qlp83Pg==
   dependencies:
     "@alloc/quick-lru" "^5.2.0"

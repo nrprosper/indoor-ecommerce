@@ -3,7 +3,7 @@ import Backdrop from "../Overlays/Backdrop.tsx";
 import {motion} from "framer-motion";
 import {IoClose as Close} from "react-icons/io5";
 import {search} from "../../Constants/icons.ts";
-import navigation, {NavLink} from "./Navigation.tsx";
+import {NavLink} from "./Navigation.tsx";
 import {useLocation, useNavigate} from "react-router-dom";
 import CartCount from "../CartCount.tsx";
 import Button from "../../ui/Button.tsx";
