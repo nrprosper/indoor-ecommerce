@@ -6,6 +6,7 @@ import {
 import App from "../App.tsx";
 import Home from "../pages/Home.tsx";
 import Login from "../pages/auth/Login.tsx";
+import Signup from "../pages/auth/Signup.tsx";
 
 
 const router = createBrowserRouter(
@@ -18,6 +19,7 @@ const router = createBrowserRouter(
                 <Route path={""} element={<Home />} />
             </Route>
             <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
         </>
     )
 )

@@ -1,5 +1,5 @@
 
-import bg from "../assets/bgs/authbg.png";
+import bg from "../assets/bgs/auth.jpg";
 
 
 export {bg}
