@@ -60,9 +60,9 @@ const Navigation = ({openCart}: NavigationProps) => {
                         <button>
                             <img src={`${search}`} alt={"search icon"}/>
                         </button>
-                        <button>
+                        <Link to={"/login"}>
                             <img src={`${profile}`} alt={"profile icon"}/>
-                        </button>
+                        </Link>
                         <CartCount onClick={openCart} count={10} />
                     </div>
                 </div>

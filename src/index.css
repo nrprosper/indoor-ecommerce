@@ -46,3 +46,22 @@ body {
     background-image: url("/src/assets/icons/arrowr.svg");
 }
 
+.input-group {
+    position: relative;
+}
+
+.input-group input:focus~label,
+.input-group input:valid~label {
+    top: 4px;
+    left: 0;
+    font-size: 0.75rem;
+    transform: translateY(-50%);
+}
+
+.input-group label {
+    position: absolute;
+    left: 0;
+    bottom: 8px;
+    pointer-events: none;
+    transition: all 0.2s ease-out;
+}
