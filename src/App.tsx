@@ -1,6 +1,6 @@
 import Banner from "./Components/Banner.tsx";
 import {Outlet} from "react-router-dom";
-import Navigation from "./Components/Navigation.tsx";
+import Navigation from "./Components/Navigation/Navigation.tsx";
 import {useState} from "react";
 import {AnimatePresence} from "framer-motion";
 import FlyoutCart from "./Components/Overlays/FlyoutCart.tsx";

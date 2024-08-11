@@ -8,7 +8,7 @@ const Hero = () => {
     return(
 
         <>
-            <div className="w-full relative h-[19rem] md:h-[33.5rem]">
+            <div className="w-full relative z-0 h-[19rem] md:h-[33.5rem]">
                 <Swiper
                     className="h-full"
                     modules={[Navigation, Pagination, Autoplay]}
