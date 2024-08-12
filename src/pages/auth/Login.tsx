@@ -6,7 +6,8 @@ import Button from "../../ui/Button.tsx";
 const Login = () => {
     return (
         <AuthLayout>
-            <div className="w-[19.4375rem] lg:w-[28.5rem]">
+            <div
+                className="w-[19.4375rem] lg:w-[28.5rem] animate-slide-up md:animate-slide-left">
                 <h2 className="text-[2.4rem] mb-4 font-medium text-theme-neutral-7 capitalize">Sign in</h2>
                 <div className="flex items-center gap-2 mb-8">
                     <p className="text-theme-neutral-4">Don't have an account yet?</p>
