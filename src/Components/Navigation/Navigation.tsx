@@ -71,10 +71,10 @@ const Navigation = ({openCart}: NavigationProps) => {
                         }
                     </nav>
                     <div className="actions flex items-center gap-4">
-                        <button>
+                        <button className="hidden md:inline-flex">
                             <img src={`${search}`} alt={"search icon"}/>
                         </button>
-                        <Link to={"/login"}>
+                        <Link to={"/login"} className="hidden md:inline-flex">
                             <img src={`${profile}`} alt={"profile icon"}/>
                         </Link>
                         <CartCount onClick={openCart} count={10} />
