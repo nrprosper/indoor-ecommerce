@@ -6,7 +6,7 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-.shop-action::after {
+.link-action::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -14,6 +14,24 @@ body {
     @apply bg-theme-blue;
     height: 2px;
     width: 100%;
+}
+
+.link-action::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.link-action-blue::after {
+    @apply bg-theme-blue;
+}
+
+.link-action-black::after {
+    @apply bg-theme-neutral-7;
 }
 
 
@@ -28,6 +46,13 @@ body {
     align-items: center;
     justify-content: center;
     background-position: center;
+}
+
+@media (max-width: 768px) {
+    .swiper-button-next,
+    .swiper-button-prev {
+        visibility: hidden;
+    }
 }
 
 .swiper-button-next::after,
