@@ -1,6 +1,7 @@
 import Container from "../Components/Container.tsx";
 import {Helmet} from "react-helmet";
 import Hero from "../Components/Features/Hero.tsx";
+import Categories from "../Components/Features/Categories.tsx";
 
 const Home = () => {
     return (
@@ -10,6 +11,7 @@ const Home = () => {
             </Helmet>
             <Container>
                 <Hero />
+                <Categories />
             </Container>
         </div>
     )
