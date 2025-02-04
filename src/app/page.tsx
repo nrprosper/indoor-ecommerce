@@ -1,5 +1,6 @@
 import HomeSwiper from "@/components/swiper";
 import Container from "@/components/container";
+import CategoryGrid from "@/sections/category-grid";
 
 export default function Home() {
   return(
@@ -26,6 +27,9 @@ export default function Home() {
                       </p>
                   </div>
               </div>
+
+              <CategoryGrid />
+
           </Container>
       </>
   )
