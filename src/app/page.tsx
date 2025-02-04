@@ -1,6 +1,8 @@
 import HomeSwiper from "@/components/swiper";
 import Container from "@/components/container";
 import CategoryGrid from "@/sections/category-grid";
+import NewArrivals from "@/sections/new-arrivals";
+import {services} from "@/constants/data";
 
 export default function Home() {
   return(
@@ -29,6 +31,25 @@ export default function Home() {
               </div>
 
               <CategoryGrid />
+
+              <NewArrivals />
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 my-12">
+                  {
+                      services.map((service, idx) => (
+                          <div
+                              key={idx}
+                              className="px-8 py-12 bg-neutral-200"
+                          >
+                              <service.icon size={36} strokeWidth={1.5} />
+                              <div className="mt-3">
+                                  <h4 className="mb-2 font-medium font-poppins text-xl text-th-neutral-700">{service.title}</h4>
+                                  <p className="text-sm text-th-neutral-400">{service.description}</p>
+                              </div>
+                          </div>
+                      ))
+                  }
+              </div>
 
           </Container>
       </>

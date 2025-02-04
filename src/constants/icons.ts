@@ -13,7 +13,9 @@ import { TicketPercent,
     Youtube,
     Mail,
     Heart,
-    Menu
+    Menu,
+    Star,
+    StarHalf
 } from 'lucide-react';
 
 
@@ -34,5 +36,7 @@ export {
     Youtube,
     Mail,
     Heart,
-    Menu
+    Menu,
+    Star,
+    StarHalf
 }
