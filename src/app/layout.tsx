@@ -4,6 +4,7 @@ import {Close, TicketPercent} from "@/constants/icons";
 import {inter, poppins, spaceGrotesk} from "@/lib/utils/fonts";
 import Action from "@/components/action";
 import Navigation from "@/components/navigation";
+import Footer from "@/components/footer";
 
 
 export const metadata: Metadata = {
@@ -39,6 +40,8 @@ export default function RootLayout({
         <main>
             {children}
         </main>
+
+      <Footer />
       </body>
     </html>
   );

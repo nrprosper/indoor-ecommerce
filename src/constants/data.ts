@@ -1,4 +1,4 @@
-import {Banknote, Truck, Lock, Phone} from "@/constants/icons";
+import {Banknote, Truck, Lock, Phone, Facebook, Instagram, Youtube} from "@/constants/icons";
 
 const links = [
     {
@@ -43,7 +43,27 @@ const services = [
 ]
 
 
+const socials = [
+    {
+        title: 'facebook',
+        icon: Facebook,
+        path: ''
+    },
+    {
+        title: 'instagram',
+        icon: Instagram,
+        path: ''
+    },
+    {
+        title: 'youtube',
+        icon: Youtube,
+        path: ''
+    }
+]
+
+
 export {
     links,
-    services
+    services,
+    socials
 }
