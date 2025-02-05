@@ -9,9 +9,9 @@ export default function Articles() {
                 <Action label="more articles"/>
             </div>
 
-            <div className="flex items-center gap-6">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
                 {
-                    Array(3).fill(0).map((_, idx) => (
+                    Array(4).fill(0).map((_, idx) => (
                         <div key={idx} className="flex flex-col gap-6 w-full">
                             <div>
                                 <Image
@@ -26,7 +26,7 @@ export default function Articles() {
                                 />
                             </div>
                             <div className="mb-2">
-                                <h4 className="font-poppins text-xl font-medium">7 ways to decor your home</h4>
+                                <h4 className="font-poppins text-lg md:text-xl font-medium">7 ways to decor your home</h4>
                                 <Action className="inline-flex" label={"Read more"}/>
                             </div>
                         </div>

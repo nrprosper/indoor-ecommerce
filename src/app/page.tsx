@@ -3,6 +3,8 @@ import Container from "@/components/container";
 import CategoryGrid from "@/sections/category-grid";
 import NewArrivals from "@/sections/new-arrivals";
 import {services} from "@/constants/data";
+import Advertisement from "@/sections/advertisement";
+import Articles from "@/sections/articles";
 
 export default function Home() {
   return(
@@ -50,8 +52,14 @@ export default function Home() {
                       ))
                   }
               </div>
-
           </Container>
+
+          <Advertisement />
+
+          <Container>
+              <Articles />
+          </Container>
+
       </>
   )
 }
