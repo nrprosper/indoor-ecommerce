@@ -46,6 +46,7 @@ export default function Footer() {
                             {
                                 links.map((link, idx) => (
                                     <Link
+                                        key={idx}
                                         href={link.path}
                                         className="font-poppins hover:font-medium transition-all duration-200"
                                     >
