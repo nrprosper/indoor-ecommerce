@@ -20,7 +20,10 @@ export default function ProductCard() {
             </div>
             <div className="flex flex-col gap-2">
                 <RatingCount count={2.5} />
-                <Link href={""} className="font-semibold">Table Lamp</Link>
+                <Link
+                    href={"/shop/kasjnkasdjnk"}
+                    className="font-semibold hover:underline transform duration-200"
+                >Table Lamp</Link>
                 <div className="flex items-center gap-3 text-sm">
                     <h5 className="font-semibold">$24.99</h5>
                     <h5 className="text-th-neutral-400 line-through">$400.00</h5>
