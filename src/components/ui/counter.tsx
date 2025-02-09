@@ -28,7 +28,7 @@ const animation: Variants = {
     }),
 };
 
-const Counter = () => {
+const Counter = ({className}:{className?: string}) => {
     const [num, setNum] = useState(1);
     const [direction, setDirection] = useState(1);
 
@@ -51,7 +51,9 @@ const Counter = () => {
     };
 
     return (
-        <div className="mt-2 inline-block border rounded-lg px-3 py-1.5 border-th-neutral-400 flex-col items-center justify-center gap-8">
+        <div className={cn(
+            `mt-2 inline-block border rounded-lg px-3 py-1.5 border-th-neutral-400 flex-col items-center justify-center gap-8`, className
+        )}>
             <div
                 ref={scope}
                 className="w-full flex items-center gap-3 text-sm"
@@ -65,7 +67,7 @@ const Counter = () => {
                 >
                     <Minus />
                 </button>
-                <h3 className="text-center font-medium">
+                <h3 className="text-center font-medium text-nowrap">
                     <AnimatePresence mode="popLayout" custom={direction}>
                         {num
                             .toString()
