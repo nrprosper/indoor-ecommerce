@@ -4,7 +4,7 @@ import Link from "next/link";
 import {links} from "@/constants/data";
 import {CircleUserRound, Menu, Search, ShoppingBag} from "@/constants/icons";
 import Container from "@/components/container";
-import {usePathname} from "next/navigation";
+import {usePathname, useRouter} from "next/navigation";
 import CartSheet from "@/components/cart-sheet";
 import MobileNav from "@/components/navigation/mobile-nav";
 
@@ -12,6 +12,7 @@ import MobileNav from "@/components/navigation/mobile-nav";
 export default function Navigation() {
 
     const pathName = usePathname();
+    const router = useRouter();
 
     return(
         <div className="py-4">
@@ -42,7 +43,7 @@ export default function Navigation() {
                         <button className="hidden md:flex">
                             <Search/>
                         </button>
-                        <button className="hidden md:flex">
+                        <button onClick={() => router.push('/login')} className="hidden md:flex">
                             <CircleUserRound />
                         </button>
                         <CartSheet />
