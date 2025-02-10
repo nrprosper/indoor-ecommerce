@@ -2,20 +2,31 @@ import Image from "next/image";
 import RatingCount from "@/components/rating-count";
 import {Button} from "@/components/ui/button";
 import Link from "next/link";
+import {cn} from "@/lib/utils";
+import React from "react";
 
 export default function ProductCard() {
     return(
         <div className="group">
-            <div className="relative w-full bg-[#F3F5F7] mb-3">
+            <div className="relative w-full bg-[#F3F5F7] flex items-center justify-center mb-3">
                 <Image
                     src={"/images/lamp.png"}
                     width={262}
                     height={349}
                     alt={"Lamp image"}
-                    className="object-cover"
+                    className="object-cover object-center"
                 />
                 <div className="opacity-0 absolute bottom-3 w-full px-3 transition-opacity duration-200 group-hover:opacity-100">
                     <Button className="block w-full">Add to cart</Button>
+                </div>
+
+                <div className="absolute top-4 left-4 flex flex-col gap-2">
+                    <Pill variant={"arrival"}>
+                        New
+                    </Pill>
+                    <Pill variant={"discount"}>
+                        50%
+                    </Pill>
                 </div>
             </div>
             <div className="flex flex-col gap-2">
@@ -30,5 +41,23 @@ export default function ProductCard() {
                 </div>
             </div>
         </div>
+    )
+}
+
+interface PillProps {
+    variant: "arrival" | "discount";
+    children: React.ReactNode;
+}
+
+const pillVariants: Record<"arrival" | "discount", string> = {
+    arrival: "bg-white text-th-neutral-700",
+    discount: "bg-th-green text-white",
+};
+
+const Pill: React.FC<PillProps> = ({ variant, children }) => {
+    return (
+        <span className={`px-[14px] py-2 font-bold rounded-sm uppercase ${pillVariants[variant]}`}>
+            {children}
+        </span>
     )
 }

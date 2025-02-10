@@ -15,7 +15,8 @@ import { TicketPercent,
     Heart,
     Menu,
     Star,
-    StarHalf
+    StarHalf,
+    ChevronRight
 } from 'lucide-react';
 
 
@@ -38,5 +39,6 @@ export {
     Heart,
     Menu,
     Star,
-    StarHalf
+    StarHalf,
+    ChevronRight
 }
